@@ -1,7 +1,11 @@
 img {
-    height: 400px;
-    width: 400px;
-    margin-left: 500px;
+    display: block;
+    margin: 20px auto;
+}
+
+* {
+    margin: 0;
+    padding: 0;
 }
 
 .center {
@@ -12,12 +16,32 @@ img {
     text-align: right;
 }
 
+body {
+    position: relative;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 20px;
+    background-color: grey;
+    color: black;
+}
+
+h1,
+h2 {
+    margin: 20px;
+}
+
+main {
+    padding: 60px 0;
+}
+
 li {
     display: inline;
     padding: 0px 20px;
     text-decoration: none;
 }
-
+a {
+    text-decoration: none;
+    color: white;
+}
 header {
     position: fixed;
     border-bottom: 10px grey;
@@ -42,6 +66,7 @@ section {
     margin-bottom: 0;
     padding: 20px 10px 40px 10px;
     border-top: 3px solid grey;
+    background-color: darkcyan;
 }
 
 form {
@@ -58,7 +83,19 @@ label {
 
 input,
 textarea {
-    vertical-align: top;
-    height: 1px solid black;
+    box-sizing: border-box;
+    width: 300px;
+    border: 1px solid black;
 }
 
+textarea {
+    vertical-align: top;
+    height: 60px;
+}
+
+button {
+    height: 40px;
+    width: 120px;
+    background-color: black;
+    color: white;
+}
